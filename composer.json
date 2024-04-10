@@ -1,0 +1,13 @@
+{
+    "description": "Customized Magento 2 Coding standard",
+    "name": "archapps/magento2-coding-standard",
+    "require": {
+        "magento/magento-coding-standard": "*"
+    },
+    "type": "phpcodesniffer-standard",
+    "version": "1.0.0",
+    "scripts": {
+        "post-install-cmd": "vendor/bin/phpcs --config-set installed_paths ../../..",
+        "post-update-cmd": "vendor/bin/phpcs --config-set installed_paths ../../.."
+    }
+}
